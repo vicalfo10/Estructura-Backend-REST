@@ -8,7 +8,7 @@ const { esAdminRole, tieneRole } = require('../middlewares/validar-roles')*/
 const { validarCampos,
         validarJWT,
         esAdminRole,
-        tieneRole } = require('../middlewares')
+        tieneRole } = require('../middlewares/')
 
 const { esRoleValido, emailValido, existeUsuarioID } = require('../helpers/db-validatos')
 
