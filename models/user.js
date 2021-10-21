@@ -35,7 +35,8 @@ const UsuarioShema = Schema({
 
 //Con esto sacamos del json los valores del shema que queremos no mostrar.
 UsuarioShema.methods.toJSON = function() {
-    const { __v, password, ...usuario } = this.toObject()
+    const { __v, password, _id, ...usuario } = this.toObject()
+    usuario.uid = _id
     return usuario
 }
 
